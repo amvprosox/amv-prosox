@@ -420,6 +420,26 @@ p.card-text.pb-4{
 }
 
 /*DOWNLOADS*/
+
+.nav-tabs{
+  }
+  .tab-content{
+    border-radius: 0px;
+    
+  }
+  .nav-tabs > li > a{
+    border: medium none;    
+    color: #FFB217;
+    border-radius: 0px;
+
+  }
+  .nav-tabs > li > a:hover{
+      border: none;
+      color:#252525;
+      background-color: #FFB217;
+  }
+
+
 .downloads{
     font-size: 11vmin;
     color: #fff;
