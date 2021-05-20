@@ -443,7 +443,7 @@
 
           <div class="col-md-6 px-3 pt-5 aec4d">
             <h4 class="about-mee">Contact Me</h4>
-            <form class="form-me" method="POST" data-netlify="true"> 
+            <form class="form-me" method="POST" data-netlify-recaptcha="true" data-netlify="true"> 
               <div class="row pb-3 px-5"> <!--row of forms-->
                 <div class="col-md-6 pt-4">
                   <input type="text" class="form-control" id="Username" name="username" placeholder="Username *" required>
@@ -454,9 +454,10 @@
                 <div class="form-group col-md-12 pt-4 pb-1">
                   <textarea class="form-control" rows="5" id="Comment" name="comment" placeholder="Your message *"></textarea>
                 </div>
-                <div class="cold-md-6 px-3">
+                <div class="col-md-6 px-3">
                   <button type="submit" name="submit" class="btn btn-warning">Submit</button>
                 </div>
+                <div class="col-md-6 px-3" data-netlify-recaptcha="true"></div>
               </div><!--/row of forms-->
             </form>
           </div>
