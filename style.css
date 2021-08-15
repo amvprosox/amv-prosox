@@ -1,0 +1,555 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+    
+}
+body{
+    position: relative;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #101010;
+    min-height: 100vh;
+    color: #ddd;
+    width: 100%;
+    font-size: 1rem;
+}
+/*==============================      Scrollbar      ========================================*/
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(44, 44, 44);
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+/*==============================      Title      ========================================*/
+.title-icon{
+    border-radius: 10px;
+}
+/*==============================       Navbar      ========================================*/
+.navbar{
+    color: #fff;
+    background-color: #1d1d1d;
+    z-index: 2;
+}
+.navbar-brand img{
+    border-radius: 10px;
+}
+/*==============================       SIDENAV      ========================================*/
+
+.amvhr{
+    border-top: 1px solid #dc294d;
+}
+
+.bx-menu:hover{
+    color: #dc294d;
+    transition: all 0.3s ease;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 78px;
+    color: #fff;
+    background-color: #1d1d1d;
+    padding: 6px 14px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
+.sidebar.active{
+    width: 200px;
+    visibility: visible;
+    z-index: 1;
+    opacity: 1;
+}
+/*
+.sidebar .logo_content .logo{
+    color: #fff;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease;
+}
+
+.sidebar.active .logo_content .logo{
+    opacity: 1;
+    pointer-events: none;
+}
+
+.logo_content .logo i{
+    font-size: 28px;
+    margin-right: 5px;
+}
+
+.logo_content .logo .logo_name{
+    font-size: 20px;
+    font-weight: 400;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.sidebar.active .logo_content .logo .logo_name{
+    opacity: 1;
+    transition: all 0.5s ease;
+}*/
+
+.sidebar #btn{
+    position: absolute;
+    color: #fff;
+    top: 6px;
+    left: 50%;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    transform: translateX(-50%);
+}
+
+.sidebar.active #btn{
+    left: 90%;
+}
+
+.sidebar ul{
+    margin-top: 20px;
+    margin-left: -37.5px;
+}
+
+.sidebar ul li{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin: 0 5px;
+    list-style: none;
+    line-height: 50px;
+}
+/*SEARCH BAR
+.sidebar ul li input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 12px;
+    outline: none;
+    background: #151515;
+    padding-left: 50px;
+    font-size: 18px;
+    color: #fff;
+    outline-style: none;
+}
+
+.sidebar ul li .bx-search{
+    position: absolute;
+    z-index: 99;
+    color: #fff;
+    font-size: 22px;
+}*/
+
+.sidebar ul li a{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.sidebar ul li a:hover{
+    color: #dc294d;
+}
+
+.sidebar ul li i{
+    height:  50px;
+    min-width: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+    
+}
+
+.sidebar .links_name{
+    opacity: 0;
+    pointer-events: none;
+    font-size: 13px;
+}
+.sidebar.active .links_name{
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.5s ease;
+}
+
+/*==============================        PROFILE      ========================================*/
+
+.sidebar .profile_content{
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+    left: 0;
+}
+
+.sidebar .profile_content .profile{
+    position: relative;
+    padding-left: 10px 6px;
+    height: 60px;
+}
+
+.profile_content .profile .profile_details{
+    display: flex;
+    align-items: center;
+}
+
+.profile_content .profile .profile_details .name_job{
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.sidebar.active .profile .profile_details .name_job{
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 1.5s ease;
+}
+
+.profile .profile_details img{
+    height: 45px;
+    width: 45px;
+    margin-left: 13px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.profile .profile_details .name_job{
+    margin-left: 10px;
+}
+.profile .profile_details .name{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.profile .profile_details .job{
+    font-size: 12px;
+}
+
+/*==============================        carousel      ========================================*/
+.carousel{
+    z-index: 0;
+}
+
+/*==============================       Tutorial      ========================================*/
+h2{
+    font-size: 32px;
+}
+
+.youtyab{
+    margin: 20px 0px;
+}
+.card-custom-img iframe{
+    transition: all .5s;
+}
+
+.card-custom-img iframe:hover{
+    transform: scale(1.1);
+    transition: all .5s;
+}
+
+/*==============================        Button     ========================================*/
+
+.btn1 {
+    line-height: 50px;
+    height:50px;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+  }
+
+.btn-one {
+  color: #FFF;
+  transition: all 0.3s;
+  position: relative;
+}
+.btn-one span {
+  transition: all 0.3s;
+}
+.btn-one::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-color: #3a3a3a;
+  border-bottom-color: #3a3a3a;
+  transform: scale(0.1, 1);
+}
+.btn-one:hover span {
+  letter-spacing: 2px;
+}
+.btn-one:hover::before {
+  opacity: 1; 
+  transform: scale(1, 1); 
+}
+.btn-one::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+  background-color: #3a3a3a2e;
+}
+.btn-one:hover::after {
+  opacity: 0; 
+  transform: scale(0.1, 1);
+}
+
+
+
+.btn-three {
+    color: #FFF;
+    transition: all 0.5s;
+    position: relative;
+  }
+  .btn-three::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #3a3a3a2e;
+    transition: all 0.3s;
+  }
+  .btn-three:hover::before {
+    opacity: 0 ;
+    transform: scale(0.5,0.5);
+  }
+  .btn-three::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border: 1px solid #3a3a3a;
+    transform: scale(1.2,1.2);
+  }
+  .btn-three:hover::after {
+    opacity: 1;
+    transform: scale(1,1);
+  }
+/*==============================        Button normals     ========================================*/
+
+
+.button-dark{
+    font-size: 12px;
+    border: 2px solid #000;
+    border-radius: 0;
+    font-weight: 600;
+}
+.button-dark:hover{
+    background-color: #000;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+.button-orange{
+    border: 2px solid #dc294d;
+    color: #ddd;
+    border-radius: 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.button-orange:hover{
+    border: 2px solid #fcfcfc;
+    background-color: #fcfcfc;
+    color: rgb(38, 38, 38);
+    transition: all 0.3s ease;
+}
+.button-orange:active{
+    border: 2px solid #b1b1b1;
+    background-color: #b1b1b1;
+    color: rgb(38, 38, 38);
+}
+.button-orange-dark{
+    background-color: #dc294d;
+    color: #ddd;
+    border-radius: 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+ }
+ .button-orange-dark:hover{
+    background-color: #fcfcfc;
+    color: rgb(38, 38, 38);
+    transition: all 0.3s ease;
+ }
+.pagination>li a{
+    background-color: #1f1f1f;
+    color: #ddd !important;
+}
+.pagination>li a:hover{
+    background-color: #3a3a3a;
+}
+.pagination>li.active>a {
+    background-color: #252525 !important;
+    border-color: #3a3a3a !important;
+    color: #ddd !important;
+}
+.pagination>.page-item>.disabled{
+    background-color: #1f1f1f;
+}
+/*==============================        Footer    ========================================*/
+a:hover{
+    text-decoration: none;
+}
+
+footer{
+    background-color: #0e0e0e;
+    color: #ddd;
+}
+
+/*==============================        Experiment Card    ========================================*/
+.card-custom {
+    overflow: hidden;
+    min-height: 450px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    color: #DDD;
+}
+
+.card-custom-img {
+height: 100px;
+min-height: 200px;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+border-color: inherit;
+}
+
+/* First border-left-width setting is a fallback */
+.card-custom-img::after {
+position: absolute;
+content: '';
+top: 161px;
+left: 0;
+width: 0;
+height: 0;
+border-style: solid;
+border-top-width: 40px;
+border-right-width: 0;
+border-bottom-width: 0;
+border-left-width: 545px;
+border-left-width: calc(575px - 5vw);
+border-top-color: transparent;
+border-right-color: #121212;
+border-bottom-color: #121212;
+border-left-color: #121212;
+}
+
+.card-custom-avatar img {
+border-radius: 50%;
+box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
+position: absolute;
+top: 100px;
+left: 1.25rem;
+width: 80px;
+height: 80px;
+}
+h4{
+    color: #ddd;
+    font-size: 17px;
+    transition: all 0.5s;
+}
+h4:hover{
+    letter-spacing: 0.05rem;
+    transition: all 0.5s;
+    color: #dc294d;
+    font-size: 17px;
+}
+
+h2{
+    font-size: 25px;
+}
+.amvmeans{  
+    font-size: 14px;
+}
+
+/*==============================        Card      ========================================*/
+.card{
+    margin-top: 10px;
+    border-radius: 8px;
+    overflow-x: hidden;
+    background-color: #121212;
+    font-size: 14px;
+    transition: all .5s;
+}
+.card:hover{
+    border: 1px solid #dc294d;
+    transition: all .5s;
+}
+
+.card img{
+    transform: scale(1.1);
+    transition: all .5s;
+}
+.card img:hover{
+    transform: scale(1.2);
+    transition: all .5s;
+}
+.card ul li{
+    list-style: none;
+}
+.col-md-3.pb-3{
+    display: flex;
+    justify-content: center;
+}
+/*==============================        youtube thumbnail   ========================================*/
+.youtyab{
+    display: flex;
+    justify-content: center;
+}
+.youtube-tn img{
+    transition: all .5s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.youtube-tn img:hover{
+    opacity: 70%;
+    transform: scale(1.1);
+    transition: all .5s;
+    box-shadow: #dc294d 0px 1px 3px 0px, #dc294d 0px 0px 0px 1px;
+}
