@@ -9,6 +9,7 @@ let btn = document.querySelector("#btn");
 
 // Animation Start
 AOS.init({
+        once: "true",
         offset: 400,
         duration: 1000
 });
