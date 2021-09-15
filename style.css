@@ -81,39 +81,6 @@ body{
     z-index: 1;
     opacity: 1;
 }
-/*
-.sidebar .logo_content .logo{
-    color: #fff;
-    display: flex;
-    height: 50px;
-    width: 100%;
-    align-items: center;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.5s ease;
-}
-
-.sidebar.active .logo_content .logo{
-    opacity: 1;
-    pointer-events: none;
-}
-
-.logo_content .logo i{
-    font-size: 28px;
-    margin-right: 5px;
-}
-
-.logo_content .logo .logo_name{
-    font-size: 20px;
-    font-weight: 400;
-    opacity: 0;
-    transition: all 0.5s ease;
-}
-
-.sidebar.active .logo_content .logo .logo_name{
-    opacity: 1;
-    transition: all 0.5s ease;
-}*/
 
 .sidebar #btn{
     position: absolute;
@@ -145,28 +112,6 @@ body{
     list-style: none;
     line-height: 50px;
 }
-/*SEARCH BAR
-.sidebar ul li input{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-    border-radius: 12px;
-    outline: none;
-    background: #151515;
-    padding-left: 50px;
-    font-size: 18px;
-    color: #fff;
-    outline-style: none;
-}
-
-.sidebar ul li .bx-search{
-    position: absolute;
-    z-index: 99;
-    color: #fff;
-    font-size: 22px;
-}*/
 
 .sidebar ul li a{
     color: #fff;
@@ -447,66 +392,24 @@ footer{
 /*==============================        Experiment Card    ========================================*/
 .card-custom {
     overflow: hidden;
-    min-height: 450px;
+    min-height: 150px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     color: #DDD;
 }
 
-.card-custom-img {
-height: 100px;
-min-height: 200px;
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
-border-color: inherit;
-}
-
-/* First border-left-width setting is a fallback */
-.card-custom-img::after {
-position: absolute;
-content: '';
-top: 161px;
-left: 0;
-width: 0;
-height: 0;
-border-style: solid;
-border-top-width: 40px;
-border-right-width: 0;
-border-bottom-width: 0;
-border-left-width: 545px;
-border-left-width: calc(575px - 5vw);
-border-top-color: transparent;
-border-right-color: #121212;
-border-bottom-color: #121212;
-border-left-color: #121212;
-}
-
-.card-custom-avatar img {
-border-radius: 50%;
-box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
-position: absolute;
-top: 100px;
-left: 1.25rem;
-width: 80px;
-height: 80px;
-}
 h4{
     color: #ddd;
-    font-size: 17px;
+    font-size: 0.85rem;
     transition: all 0.5s;
 }
 h4:hover{
     letter-spacing: 0.05rem;
     transition: all 0.5s;
     color: #dc294d;
-    font-size: 17px;
 }
 
 h2{
-    font-size: 25px;
-}
-.amvmeans{  
-    font-size: 14px;
+    font-size: 1.3rem;
 }
 
 /*==============================        Card      ========================================*/
@@ -515,11 +418,29 @@ h2{
     border-radius: 8px;
     overflow-x: hidden;
     background-color: #121212;
-    font-size: 14px;
+    font-size: 0.75rem;
     transition: all .5s;
 }
+
+.free-price{
+    font-size: 1rem;
+    margin-top: -16px;
+    margin-left: -10px;
+    font-weight: bold;
+    color: #fff;
+}
+
 .card:hover{
     border: 1px solid #dc294d;
+    transition: all .5s;
+}
+
+.card-body {
+    padding-right: 0.8rem;
+    padding-left: 0.8rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis " [..]";
     transition: all .5s;
 }
 
@@ -527,6 +448,7 @@ h2{
     transform: scale(1.1);
     transition: all .5s;
 }
+
 .card img:hover{
     transform: scale(1.2);
     transition: all .5s;
@@ -544,6 +466,8 @@ h2{
     justify-content: center;
 }
 .youtube-tn img{
+    max-width: 109%;
+    height: auto;
     transition: all .5s;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
@@ -552,4 +476,24 @@ h2{
     transform: scale(1.1);
     transition: all .5s;
     box-shadow: #dc294d 0px 1px 3px 0px, #dc294d 0px 0px 0px 1px;
+}
+
+
+.note
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 3px 20px;
+  font-size: 1em;
+}
+.note.no-stock
+{
+  background: #191919;
+  color: #fff;
+}
+
+/*---------------------------------------------------------------*/
+
+@media only screen and (max-width: 320px) {
 }
