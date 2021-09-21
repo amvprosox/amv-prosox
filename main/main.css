@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+    
+}
+body{
+    box-sizing: border-box;
+    position: relative;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0e0e0e;
+    min-height: 100vh;
+    color: #ddd;
+    width: 100%;
+    font-size: 1rem;
+}
+/*==============================        Intro     ========================================*/
+.intro-background{ 
+    min-height: 70vh;
+    width: 100%;
+    background-image: url(/images/intro.png);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.intro-intro{
+    padding-left: 8%;
+}
+.h1-intro{
+    font-size: 3.5vmax;
+    font-weight: 900;
+}
+.p-intro{
+    font-size: 1.3vmax;
+}/*==============================        Gallery     ========================================*/
+.featured-worked{
+    position: relative;
+    
+}
+.h1-title{
+    font-size: 2rem;
+}
+.card-title{
+    font-size: 2.5vh;
+    
+    color: #73ff66;
+}
+.nav a{
+    font-size: 1.0em;
+    color: #73ff66;
+    font-weight: bold;
+}
+.nav-tabs{
+    border-bottom: none;
+    
+}
+.nav-tabs .nav-link.active{
+    color: #1d1d1d;
+    background-color: #73ff66;
+    border: none;
+}
+.nav-tabs .nav-link{
+    border: none;
+}
+#Featured{
+    background-color: rgb(10, 10, 10);
+    padding-top: 3%;
+    padding-bottom: 3%;
+    
+}
+/*==============================      Scrollbar      ========================================*/
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(44, 44, 44);
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+/*==============================      Title      ========================================*/
+.title-icon{
+    border-radius: 10px;
+}
+/*==============================       Navbar      ========================================*/
+.navbar{
+    z-index: 2;
+    color: #fff;
+    background: linear-gradient(244deg, #1d1d1d, #1f1f1f, #1d1d1d);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 17s ease infinite;
+    -moz-animation: AnimationName 17s ease infinite;
+    animation: AnimationName 17s ease infinite;
+    }
+
+    @-webkit-keyframes AnimationName {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @-moz-keyframes AnimationName {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @keyframes AnimationName {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+.navbar-brand img{
+    border-radius: 10px;
+}
+.navbar-dark .navbar-nav .nav-link.active{
+    color: #73ff66;
+}
+.navbar-dark .navbar-nav .nav-link{
+    transition: 0.3s;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+    transition: 0.3s;
+    color: #73ff66;
+}
+/*==============================        navbar latest   ========================================*/
+.navbar{
+    padding: 5px 8%;
+    border-color: #1d1d1d;
+    position: fixed;
+    width: 100%;
+}
+.navbar-dark .navbar-toggler {
+    border:none;
+}
+button:focus {
+    outline: none;
+}
+.spanlogo{
+    font-family: 'Rubik Mono One', sans-serif;
+}
+.navbar-toggler{
+    padding: 0;
+}
+.nav-item{
+    margin: 0 0.5em;
+}
+/*==============================        Button     ========================================*/
+.btn-outline-success{
+    margin-top: 20px;
+    font-size: 20px;
+    border-radius: 0;
+    border: none;
+    outline: none;
+    transition: all 0.5s;
+    background-image: linear-gradient(to right, #01ca3d 0%, #73ff66  51%, #01ca3d  100%);
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    background-size: 200% auto;
+    color: white;            
+    display: block;
+}
+.btn-outline-success:hover{
+    transition: all 0.35s;
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+.btn-send{
+    margin-top: 15px;
+    font-weight: bold;
+    border: 1px solid #73ff66;
+    background-image: linear-gradient(to right, #01ca3d 0%, #73ff66  51%, #01ca3d  100%);
+    border-radius: 0;
+    width: 100%;
+    transition: all 0.5s;
+    background-size: 200% auto;
+}
+.btn-send:hover{
+    transition: all 0.5s;
+    font-weight: bold;
+    color: #ffffff;
+    border: 1px solid #73ff66;
+    background-position: right center;
+}
+.view-all{
+    padding: 8px 16px;
+    font-size: 15px;
+}
+/*==============================       Card      ========================================*/
+.card{
+    background-color: #0e0e0e;
+    transition: 0.5s;
+    color: rgb(169, 169, 169);
+}
+.card:hover{
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: #73ff66 0px 1px 3px 0px, #73ff66 0px 0px 0px 1px;
+}
+.card-img-overlay{
+    color: #73ff66;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(51, 51, 51, 0.446);
+    bottom: -8.5px;
+    border-radius: 3px;
+    opacity: 0;
+    transition: 0.3s;
+}
+.card-img-overlay:hover{
+    opacity: 1;
+    transition: 0.3s;
+}
+.card-img-top{
+    border-radius: 3px;
+}
+.card-img{
+    height: 100%;
+    width: 100%;
+}
+.art-tools{
+    margin-top: 3%;
+}
+/*==============================        Contact Me       ========================================*/
+#Contact{
+    margin-top: 20px 0;
+}
+.contact-me{
+    border-radius: 10px;
+    padding-top: 1%;
+    padding-bottom: .5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    max-width:40rem;
+}
+.form-control:focus{
+    box-shadow: none;
+    border-color: #73ff66;
+    background-color: #1d1d1d;
+    color: #fff;
+}
+.form-control{
+    background-color: #0e0e0e;
+    color: #ffffff;
+    border-radius: unset;
+}
+/*==============================        banner       ========================================*/
+.banner-youtube{
+    background-image: url(/banner/banner-2.png);
+    min-height: 25vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+/*==============================        Footer    ========================================*/
+a:hover{
+    text-decoration: none;
+}
+
+footer{
+    background-color: #0e0e0e;
+    color: #ddd;
+}
+
+
+/*==============================        Media Queries       ========================================*/
+@media (max-width: 375px) {
+    .h1-intro{
+        font-size: 4.5vmax;
+    }
+    .p-intro{
+        font-size: 2.0vmax;
+    }
+    .banner-youtube{
+        min-height: 10vh;
+    }
+    .card{
+        margin-top: 30px;
+    }
+}

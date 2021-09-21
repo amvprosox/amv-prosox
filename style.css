@@ -6,6 +6,7 @@
     
 }
 body{
+    box-sizing: border-box;
     position: relative;
     overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
@@ -15,6 +16,31 @@ body{
     width: 100%;
     font-size: 1rem;
 }
+/*==============================        Intro     ========================================*/
+.intro-background{ 
+    min-height: 70vh;
+    width: 100%;
+    background-image: url(/images/intro.png);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.intro-intro{
+    padding-left: 8%;
+}
+.h1-intro{
+    font-size: 3.5vmax;
+    font-weight: 900;
+}
+.p-intro{
+    font-size: 1.3vmax;
+}
+
 /*==============================      Scrollbar      ========================================*/
 /* width */
 ::-webkit-scrollbar {
@@ -52,11 +78,11 @@ body{
 /*==============================       SIDENAV      ========================================*/
 
 .amvhr{
-    border-top: 1px solid #dc294d;
+    border-top: 1px solid #73ff66;
 }
 
 .bx-menu:hover{
-    color: #dc294d;
+    color: #73ff66;
     transition: all 0.3s ease;
 }
 
@@ -124,7 +150,7 @@ body{
 }
 
 .sidebar ul li a:hover{
-    color: #dc294d;
+    color: #73ff66;
 }
 
 .sidebar ul li i{
@@ -221,7 +247,27 @@ h2{
 }
 
 /*==============================        Button     ========================================*/
-
+.btn-outline-success{
+    margin-top: 20px;
+    font-size: 20px;
+    border-radius: 0;
+    border: none;
+    outline: none;
+    transition: all 0.5s;
+    background-image: linear-gradient(to right, #01ca3d 0%, #73ff66  51%, #01ca3d  100%);
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    background-size: 200% auto;
+    color: white;            
+    display: block;
+}
+.btn-outline-success:hover{
+    transition: all 0.35s;
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
 .btn1 {
     line-height: 50px;
     height:50px;
@@ -333,7 +379,7 @@ h2{
     transition: all 0.5s ease;
 }
 .button-orange{
-    border: 2px solid #dc294d;
+    border: 2px solid #73ff66;
     color: #ddd;
     border-radius: 0;
     font-weight: 600;
@@ -352,7 +398,7 @@ h2{
     color: rgb(38, 38, 38);
 }
 .button-orange-dark{
-    background-color: #dc294d;
+    background-color: #73ff66;
     color: #ddd;
     border-radius: 0;
     font-weight: 600;
@@ -405,7 +451,7 @@ h4{
 h4:hover{
     letter-spacing: 0.05rem;
     transition: all 0.5s;
-    color: #dc294d;
+    color: #73ff66;
 }
 
 h2{
@@ -431,7 +477,7 @@ h2{
 }
 
 .card:hover{
-    border: 1px solid #dc294d;
+    border: 1px solid #73ff66;
     transition: all .5s;
 }
 
@@ -466,7 +512,7 @@ h2{
     justify-content: center;
 }
 .youtube-tn img{
-    max-width: 109%;
+    max-width: 100%;
     height: auto;
     transition: all .5s;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -475,7 +521,7 @@ h2{
     opacity: 70%;
     transform: scale(1.1);
     transition: all .5s;
-    box-shadow: #dc294d 0px 1px 3px 0px, #dc294d 0px 0px 0px 1px;
+    box-shadow: #73ff66 0px 1px 3px 0px, #73ff66 0px 0px 0px 1px;
 }
 
 
@@ -492,6 +538,27 @@ h2{
   background: #191919;
   color: #fff;
 }
+/*==============================        navbar latest   ========================================*/
+.navbar{
+    padding: 5px 10px;
+    border-color: #1d1d1d;
+}
+.navbar-dark .navbar-toggler {
+    border:none;
+}
+button:focus {
+    outline: none;
+}
+.spanlogo{
+    font-family: 'Rubik Mono One', sans-serif;
+}
+.navbar-toggler{
+    padding: 0;
+}
+.nav-item{
+    margin: 0 0.5em;
+}
+
 
 /*---------------------------------------------------------------*/
 
