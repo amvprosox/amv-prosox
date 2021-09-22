@@ -284,8 +284,8 @@ footer{
 }
 
 
-/*==============================        Media Queries       ========================================*/
-@media (max-width: 375px) {
+/*==============================        Media Queries 375       ========================================*/
+@media (min-width: 375px) and (max-width: 375px) {
     .h1-intro{
         font-size: 4.5vmax;
     }
@@ -297,5 +297,122 @@ footer{
     }
     .card{
         margin-top: 30px;
+    }
+}
+/*==============================        Media Queries 414       ========================================*/
+@media (min-width: 414px) and (max-width: 414px) {
+    .h1-intro{
+        margin-top: 50px;
+        font-size: 5.5vmax;
+    }
+    .p-intro{
+        font-size: 2.3vmax;
+    }
+    .btn-outline-success{
+        text-align: center;
+        padding: 10px 19px;
+        font-size: 1em;
+    }
+}
+/*==============================        Media Queries 320       ========================================*/
+@media (min-width: 320px) and (max-width: 320px) {
+    .h1-intro{
+        margin-top: 50px;
+        font-size: 5.9vmax;
+    }
+    .p-intro{
+        margin-bottom: 20px;
+        font-size: 2.5vmax;
+
+    }
+    .btn-outline-success{
+        text-align: center;
+        padding: 10px 19px;
+        font-size: 12px;
+    }
+    .featured-worked{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+/*==============================        Media Queries 320       ========================================*/
+@media (min-width: 360px) and (max-width: 411px) {
+    .h1-intro{
+        margin-top: 50px;
+        font-size: 5vmax;
+    }
+    .p-intro{
+        margin-bottom: 20px;
+        font-size: 2.2vmax;
+
+    }
+    .btn-outline-success{
+        text-align: center;
+        padding: 10px 19px;
+        font-size: 1em;
+    }
+    .featured-worked{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+/*==============================        Media Queries 320       ========================================*/
+@media (min-width: 1024px) and (max-width: 1024px) {
+    .row-ae-c4d{
+        justify-content: center;
+    }
+    .h1-intro{
+        font-size: 4.5vmax;
+    }
+    .p-intro{
+        font-size: 2.0vmax;
+    }
+    .banner-youtube{
+        min-height: 10vh;
+    }
+    .card{
+        margin-top: 30px;
+    }
+    .row-ipad{
+        flex: 1 0 53.333333%;
+        max-width: 55.333333%;
+    }
+    .btn-outline-success{
+        text-align: center;
+        padding: 20px 25px;
+        font-size: 2.2em;
+    }
+    .featured-worked{
+        margin-top: 13px;
+    }
+}
+/*==============================        Media Queries 320       ========================================*/
+@media (min-width: 768px) and (max-width: 768px) {
+    .row-ae-c4d{
+        justify-content: center;
+    }
+    .h1-intro{
+        font-size: 4.8vmax;
+    }
+    .p-intro{
+        font-size: 2.0vmax;
+    }
+    .banner-youtube{
+        min-height: 10vh;
+    }
+    .card{
+        margin-top: 30px;
+    }
+    .row-ipad{
+        flex: 1 0 53.333333%;
+        max-width: 57.333333%;
+    }
+    .btn-outline-success{
+        text-align: center;
+        padding: 15px 18px;
+        font-size: 1.5em;
+    }
+    .featured-worked{
+        margin-top: 13px;
     }
 }
